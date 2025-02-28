@@ -5,30 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=30&id=59825&format=png">
     <title>Password Random</title>
 </head>
 <body>
-</div>
     <div class="container">
-        <h1>Password Random</h1>
-        <p class="subtitle">generate strong and random passwords</p>
-        <div class="password-display" id="passwordDisplay">Your Password</div>
-        <div class="button-container">
-            <button class="button" id="generateButton">Generate</button>
-            <button class="button" id="copyButton"><i class="fas fa-copy"></i> Copy to Clipboard</button>
-            <footer>
-                <p>
-                    Created by <span class="author-name">Justin Dev</span>
-                    <a href="https://github.com/arepaHub" target="_blank" class="github-link">
-                        <i class="fab fa-github"></i> <!-- Ícono de GitHub -->
-                    </a>
-                    <a href="https://www.instagram.com/soy_justi/"target="_blank" class="social-link">
-                        <i class="fab fa-instagram"></i> <!-- Ícono de Instagram -->
-                    </a>
-                    <a href="https://discord.gg/pnVPMDSwua" target="_blank" class="social-link">
-                        <i class="fab fa-discord"></i> <!-- Ícono de Discord -->
-                    </a>
-                </p>
+        <!-- Encabezado -->
+        <div class="header-section">
+            <h1>Password Random</h1>
+            <p class="subtitle">Generate strong and random passwords</p>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <!-- Sección de contraseña -->
+            <div class="password-section">
+                <div class="password-display" id="passwordDisplay">Your Password</div>
+            </div>
+
+            <!-- Opciones de configuración -->
+            <div class="options-section">
+                <div class="options-container">
+                    <label>
+                        <input type="checkbox" id="soloNumeros">
+                        Only numbers
+                    </label>
+                    <label>
+                        <input type="checkbox" id="soloLetras">
+                        Only letters
+                    </label>
+                    <label>
+                        <input type="checkbox" id="incluirNumeros" checked>
+                        Include numbers
+                    </label>
+                    <label>
+                        <input type="checkbox" id="incluirSimbolos" checked>
+                        Include symbols
+                    </label>
+                </div>
+            </div>
+
+            <!-- Botones de acción -->
+            <div class="actions-section">
+                <div class="button-container">
+                    <button class="button" id="generateButton">Generate</button>
+                    <button class="button" id="copyButton">
+                        <i class="fas fa-copy"></i> Copy to Clipboard
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer con redes sociales -->
+        <footer>
+            <div class="footer-content">
+                <span class="author-name">Created by Justin Dev</span>
+                <span class="social-separator">_</span>
+                <a href="https://github.com/arepaHub" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i> 
+                </a>
+                <span class="social-separator">_</span>
+                <a href="https://www.instagram.com/soy_justi/" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i> 
+                </a>
+                <span class="social-separator">_</span>
+                <a href="https://discord.gg/pnVPMDSwua" target="_blank" class="social-link">
+                    <i class="fab fa-discord"></i> 
+                </a>
+            </div>
+        </footer>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
